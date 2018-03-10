@@ -8,5 +8,5 @@ element.innerHTML = 'Hola-Main.js';
 
 var img = document.getElementById('madi');
 img.onclick = function (){
-    img.style.marginleft = '110px';
-}
+    var interval = setInterval(moveRight, 100);
+};
