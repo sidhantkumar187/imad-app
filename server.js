@@ -61,9 +61,11 @@ function createTemplate (data){
 app.get('/', function (req, res) {          //for handling specific url in this case its index.html
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
 var counter = 0;                // initializinf=g the counter variable 
 app.get('/counter', function (req,res){
     counter = counter + 1;
+    res.send(counter.toString());
 } )
 
 app.get("/article-one", function (req,res) {
