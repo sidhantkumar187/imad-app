@@ -66,7 +66,7 @@ var counter = 0;                // initializing the counter variable
 app.get('/counter', function (req,res){
     counter = counter + 1;
     res.send(counter.toString());       // How many times the request has been made to the page/counter
-} )
+});
 
 app.get("/article-one", function (req,res) {
     res.send(createTemplate(articleOne));
