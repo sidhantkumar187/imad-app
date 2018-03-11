@@ -1,3 +1,7 @@
+
+// this is client-side java-script 
+
+
 console.log('Loaded!');
 
 // changing the text of main-text
@@ -13,5 +17,5 @@ function moveRight (){
     img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function (){
-    var interval = setInterval(moveRight, 50);
+    var interval = setInterval(moveRight, 50);  // calling moveRight function to move image by passing time interval(50ms)
 };
