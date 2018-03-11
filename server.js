@@ -58,9 +58,13 @@ function createTemplate (data){
 	return htmlTemplate;
 }
 
-app.get('/', function (req, res) {          //for handling specific url
+app.get('/', function (req, res) {          //for handling specific url in this case its index.html
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+var counter = 0;                // initializinf=g the counter variable 
+app.get('/counter', function (req,res){
+    counter = counter + 1;
+} )
 
 app.get("/article-one", function (req,res) {
     res.send(createTemplate(articleOne));
