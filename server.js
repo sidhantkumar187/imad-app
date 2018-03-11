@@ -1,3 +1,7 @@
+
+// Server side javascript-
+//                          responding to the requests by the client
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
