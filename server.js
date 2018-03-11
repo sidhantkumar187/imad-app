@@ -62,10 +62,10 @@ app.get('/', function (req, res) {          //for handling specific url in this 
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var counter = 0;                // initializinf=g the counter variable 
+var counter = 0;                // initializing the counter variable 
 app.get('/counter', function (req,res){
     counter = counter + 1;
-    res.send(counter.toString());
+    res.send(counter.toString());       // How many times the request has been made to the page/counter
 } )
 
 app.get("/article-one", function (req,res) {
