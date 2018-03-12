@@ -43,4 +43,6 @@ button.onclick = function (){
     //Not DONE yet
     };
     //render the variable in the correct span
+    request.open('GET', 'http://kumarshanu8930.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
