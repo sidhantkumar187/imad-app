@@ -27,10 +27,12 @@ var button = document.getElementById('counter');
 
 button.onclick = function (){
     
-    // Make a request to the counter end-point
+    // Create a request object
+    
     var request = new XMLHttpRequest();
     
-    // capture the response and store it in the variable 
+    // capture the response and store it in the variable
+    
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             //Take some action
@@ -42,7 +44,8 @@ button.onclick = function (){
         }
     //Not DONE yet
     };
-    //render the variable in the correct span
+    
+    //make the request
     request.open('GET', 'http://kumarshanu8930.imad.hasura-app.io/counter',true);
     request.send(null);
 };
